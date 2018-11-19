@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+
+        <style>
+            
+        /*introducimos fuentes*/
+       @font-face{font-family: "latin"}
+       @font-face{font-family: "español"}
+       @font-face{font-family: "subtitulo"; src:local()}
+       @font-face{font-family: "titulo"; src: local("fuentes\Libre_Baskerville\LibreBaskerville-Bold.ttf")}
+
+       /*definimos estilos*/
+        body        {background-color:#eca}
+
+        h1          {letter-spacing:0.5em;text-align: center;text-transform:                uppercase;letter-spacing:0.5em;font-family:'titulo'}
+
+        /*creamos clases*/
+        h2.latin    {color: black;font-family: 'Bitter', serif;}
+        h2.español  {color: white; text-align: right; font-size: 2em;                       font-weight: 200;font-family: 'Libre Baskerville';}
+        p.subtitulo {font-size: 12px;text-align: center;font-style: italic,}
+
+
+        </style>
+    </head>
+
+    <body>
+        <h1>Citas de Virgilio</h1>
+
+        <p class="subtitulo">
+            <strong>Publio Virgilio Marón</strong> (70 a.C. - 19 a.C.) fue un poeta romano. Sus principales obras fueron la <br> <cite>Eneida</cite>,<cite>las Bucólica</cite> y <cite>las Geórgicas</cite>. Algunos de sus versos se han convertido en citas célebres.
+        </p>
+
+        <h2 class="latin">Ab Iove principium.</h2>
+
+        <h2 class="español">Empieza por lo importante.</h2>
+
+        <h2 class="latin">Felix qui potuit rerum cognoscere causas.</h2>
+
+        <h2 class="español">Dichoso aquel que puede conocer las causas de las cosas.</h2>
+
+        <h2 class="latin">Mens agitat molem.</h2>
+
+        <h2 class="español">La mente mueve la materia.</h2>
+
+        <h2 class="latin">Nimium ne crede colori.</h2>
+
+        <h2 class="español">No confíes mucho en los colores.</h2>
+
+        <h2 class="latin">Possunt quia posse videntur.</h2>
+
+        <h2 class="español">Pueden los que creen que pueden.</h2>
+
+        <h2 class="latin">Forsan et haec olim meminisse iuvabit.</h2>
+
+        <h2 class="español">Quizás algún día recordemos esto con júbilo.</h2>
+
+    </body>
+</html>
