@@ -1,0 +1,6 @@
+/*Introducimos fuentes*/
+@font-face{font-family: "latin"}
+@font-face{font-family: "español"}
+@font-face{font-family: "subtitulo";}
+@font-face{font-family: 'titulo' ; src:url("fuentes\Libre_Baskerville\LibreBaskerville-Bold.ttf")}
+
