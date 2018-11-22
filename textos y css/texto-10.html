@@ -8,21 +8,24 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>texto-10</title>
 
+        <!--Introducimos fuentes que tenemos en un ".css" aparte-->
         <link rel="stylesheet" href="fuentes.css">
 
-        <style>
+        <style>/*definimos estilos*/
+            body        {background-color:#eca}
 
-       /*definimos estilos*/
-        body        {background-color:#eca}
+            h1          {letter-spacing:0.5em;text-align: center;                               text-transform:uppercase;letter-spacing:0.5em;}
 
-        h1          {letter-spacing:0.5em;text-align: center;text-transform:uppercase;letter-spacing:0.5em;font-family:'titulo'}
+            /*creamos clases*/
+            h2.latin    {color: black}
+            h2.español  {color: white; text-align: right;font-weight: 200;letter-spacing: 1px}
+            p.subtitulo {font-size: 12px;margin-left: 30%;margin-right:30%;font-style: italic}
 
-        /*creamos clases*/
-        h2.latin    {color: black;font-family: 'Bitter', serif;}
-        h2.español  {color: white; text-align: right; font-size: 2em;                       font-weight: 200;}
-        p.subtitulo {font-size: 12px;text-align: center;font-style: italic,}
-
-
+            /*ponemos fuentes linkeadas*/
+            h1          {font-family: 'titulo'}
+            h2.latin    {font-family: 'latin'}
+            h2.español  {font-family: 'español'}
+            p.subtitulo {font-family: 'subtitulo'}
         </style>
     </head>
 
@@ -30,7 +33,7 @@
         <h1>Citas de Virgilio</h1>
 
         <p class="subtitulo">
-            <strong>Publio Virgilio Marón</strong> (70 a.C. - 19 a.C.) fue un poeta romano. Sus principales obras fueron la <br> <cite>Eneida</cite>,<cite>las Bucólica</cite> y <cite>las Geórgicas</cite>. Algunos de sus versos se han convertido en citas célebres.
+            <strong>Publio Virgilio Marón</strong> (70 a.C. - 19 a.C.) fue un poeta romano. Sus principales obras fueron la <cite>Eneida</cite>,<cite>las Bucólica</cite> y <cite>las Geórgicas</cite>. Algunos de sus versos se han convertido en citas célebres.
         </p>
 
         <h2 class="latin">Ab Iove principium.</h2>
