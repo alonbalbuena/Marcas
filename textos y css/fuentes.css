@@ -1,7 +1,20 @@
 /*Introducimos fuentes*/
 /*IMPORTANTE USAR COMILLAS SIMPLES*/
-@font-face{font-family:'latin';src: url('fuentes/ARVO.woff2')}
-@font-face{font-family:'español';src: url('fuentes/BITTER.woff2')}
-@font-face{font-family:'subtitulo';src: url("fuentes/LIBREBASKERVILLE.woff2")}
-@font-face{font-family:'titulo' ; src:url("fuentes/LIBREBASKERVILLE.woff2")}
+
+@font-face{
+    font-family:'latin';src: url('fuentes/ARVO.woff2')
+}
+
+@font-face{
+
+    font-family:'español';src: url('fuentes/BITTER.woff2')
+}
+
+@font-face{
+    font-family:'subtitulo';src: url("fuentes/LIBREBASKERVILLE.woff2")
+}
+
+@font-face{
+    font-family:'titulo' ; src:url("fuentes/LIBREBASKERVILLE.woff2")
+}
 
