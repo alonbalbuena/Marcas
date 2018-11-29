@@ -10,31 +10,57 @@
     body{
         border:solid #fff176;
         margin:0;
+        border-width: 5px;
     }
-    div.efemeride{
-        margin:10px;
-        background-color:#ffeb3b;
-        border:solid #fbc02d;
-        color:brown;
-    }
-    .efemeride div
-    {
-        float: left;
-        margin:15px;
-        background-color: #ffeb3b;
-        border:solid orange;
-    }
+
     h1{
         margin:0;
         background-color:#fff176;
     }
+
+    div.efemeride{
+        float:left;
+        background-color:#ffeb3b;
+        border:solid #fbc02d;
+        color:brown;
+        margin:15px;/*dejamos espacio entre bloques*/
+        margin-left:15px;
+    }
+
     h2{
-        margin:0;
         background-color:#fbc02d;
-        }
-    h3{
         margin:0;
+    }
+
+    div.texto
+    {
+        background-color: #ffeb3b;
+        border:solid orange;
+        margin:15px;/*volvemos a dejar espacio*/
+        float:left;
+    }
+
+    h3{
         background-color: orange;
+        margin:0px;
+    }
+
+    p{
+    }
+
+    #footer{
+        clear:both;
+    }
+
+    #footer p {
+        margin:0;
+        background-color: #fff176;
+        font-size:80%;
+    }
+
+    html{
+        margin-bottom: 0;
+        padding-bottom: 2rem;
     }
     </style>
 </head>
@@ -43,15 +69,28 @@
     <h1>Sucedio un 14 de Diciembre</h1>
     <div class="efemeride">
         <h2>Edad Media</h2>
+
         <div class="texto">
             <h3>557</h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
-        <div>
+
+        <div class="texto">
             <h3>1287</h3>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
         </div>
     </div>
 
+    <div class="efemeride">
+        <h2>Edad moderna</h2>
+        <div class="texto">
+            <h3>1787</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>Informacion obtenida en la Wikipedia</p>
+    </div>
 </body>
 </html>
