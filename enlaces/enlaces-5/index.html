@@ -6,29 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>enlaces-5</title>
     <style>
-    a {
-        float:left;
-        margin-left:10px; 
+
+    a:link {/*estado normal*/
+        border:5px inset chocolate;
+        background-color: coral;
+        clear: both;/*reiniciamos el float*/
+        float:left;/*iniciamos el float*/
+        margin-top:15px;
+        width: 100px;height: 100px;/*celdas cuadradas*/
+        overflow:hidden;/*ocultamos lo sobrante*/
     }
+
+    h1::first-line{background-color: goldenrod}
+
+    a:visited{/*si ya visite el link*/
+        background-color: blueviolet;
+    }
+
+    a:hover{/*si mantengo raton encima*/
+        background-color: maroon;
+    }
+
+    a:active{/*si mantengo raton pulsado*/
+        background-color: greenyellow;
+    }
+
+    h1#header{
+        width: 500px;
+        margin:auto;/*centramos*/
+        font: 2.5em;
+        font-weight: bold;
+        font-family:monospace; 
+    }
+
     body{
-        background-color: #3CBEB1;
-        font-family:sans-serif;
-        font-weight:bold;
+        background-color:deepskyblue;
     }
+    
+
     </style>
 </head>
 
 <body>
-    <h1>Enlaces a buscadores: </h1>
+    <h1 id="header">Enlaces a buscadores:<br>
+        ¿no crees que es necesario usar mas pseudoelementos?
+    </h1>
+
     <a href="https://www.google.es">
         <img 
         src="../imagenes/google.png"
         alt="logoGoogle"
-        height="100"
         width="100"
+        height="100"
         title="Google">
         <!--title es un argumento comun a todas las etiquetas, nos muestra esa palabra al pasar el raton por encima-->
     </a>
+
+
     <a href="https://es.yahoo.com/">
         <img 
         src="../imagenes/yahoo.png" 
@@ -37,29 +71,35 @@
         width="100"
         title="Yahoo">
     </a>
+
+
     <a href="https://www.bing.com/?setlang=es">
-        <img 
-        src="../imagenes/bing.svg"
-        alt="logoBing"
-        height="100"
-        width="100"
-        title="Bing">
+        <img src="../imagenes/bing.svg"
+            alt="logoBing"
+            height="100"
+            width="100"
+            title="Bing"
+        >
     </a>
+
+
     <a href="https://es.ask.com/?o=0&l=dir&ad=SEO">
-        <img 
-        src="../imagenes/ask.svg"
-        alt="logoAsk"
-        height="100"
-        width="100"
-        title="Ask">
+        <img src="../imagenes/ask.svg"
+            alt="logoAsk"
+            height="100"
+            width="100"
+            title="Ask"
+        >
     </a>
+
+
     <a href="https://duckduckgo.com/">
-        <img 
-        src="../imagenes/duckduckgo.png"
-        alt="logoDuckDuckGo"
-        height="100"
-        width="100"
-        title="DuckDuckGo">
+        <img src="../imagenes/duckduckgo.png"
+            alt="logoDuckDuckGo"
+            height="100"
+            width="100"
+            title="DuckDuckGo"
+        >
     </a>
 
 </body>
