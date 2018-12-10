@@ -30,13 +30,13 @@ h1
     text-align: center;
 }
 
-#zonadenavegacion
+div#zonadenavegacion
 {
-    text-align: center;/*alineamos el texto*/
+    margin-left: auto;
+    margin-right: auto;
+    width:345px;
     text-transform: uppercase;
-     /*no se alineaAAAAAAAAAAAAAAAAR*/
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-bottom: 2cm;
 }
 
 
@@ -49,7 +49,7 @@ h1
     padding: 3px;
     background-color:aliceblue;
     border-radius: 5px;
-    margin-right:15px;
+    margin-right: 10px;
 }
 
 #footer {
