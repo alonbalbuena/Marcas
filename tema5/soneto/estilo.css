@@ -1,0 +1,33 @@
+pre{
+    color: white;
+    font-size: x-large;
+    border: solid 2px black;
+    width: 50%;
+    min-width: 550px;
+    text-align: center;
+    margin-right: 25%;
+    margin-left: 25%
+}
+
+.uno{
+    background-image: url(./fondos/manchas.png);
+}
+.dos{
+    background-image: url(./fondos/tallos.jpg)
+}
+.tres{
+    background:url(./fondos/estrellas.png);background: url(./fondos/caballo.svg) repeat-x scroll;
+
+}
+
+h1{
+    margin: 0;
+    text-align: center;
+    color: azure;
+    background-color: brown
+}
+
+body{
+    margin:0;
+    background-image: url(./fondos/hexagonos.jpg)
+}
