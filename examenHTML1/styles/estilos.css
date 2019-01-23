@@ -1,0 +1,82 @@
+body
+{
+    background-color: whitesmoke;
+    text-align: justify;
+    color:gray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1
+{
+    background-color: #616161;
+    color:white;
+    text-align: center;
+}
+
+
+div#datos
+{
+    border:solid grey;
+    background-color: white;
+
+    /*alineamos la caja*/
+    margin-left:30%;
+    margin-right: 30%;
+    text-align: center;
+    
+    padding-bottom:15px;
+    /*espaciado debajo del enlace*/ 
+}
+
+h2
+{
+    font-family: 'Lucida HandWriting',Lucida,sans-serif;
+}
+
+strong,em/*palabras importantes*/
+{
+    color: #4caf50;
+    font-size: 1.2em;
+}
+
+a:hover /*al pasar el raton por encima*/
+{
+    background-color: gray;
+    color:white;
+    font-size: 1.5em;
+}
+
+a:hover::first-letter/*primera letra de palabras*/
+{
+    text-transform: uppercase;
+}
+
+figure/*mismo caracteristicas para todos*/
+{    
+    margin-left: 10px;
+    margin-right: 10px;
+    float:left;
+}
+
+figure#cabeceraGrupo
+{
+    border:solid 2px gray;
+    padding:5px;
+    float: left;
+}
+
+figure#cabeceraGrupo figcaption
+{
+    text-align: center;
+    font-size: 1.25em;
+    font-style: italic;
+}
+
+
+div.fotosGrupo figure
+{
+    border:5px solid #4Caf50;
+    background-color: White;
+    padding: 10px;
+    margin: 10 px;
+}
