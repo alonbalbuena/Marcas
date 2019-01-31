@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>formulario-2</title>
+</head>
+<body>
+    <h1>Cosmética Profesional</h1>
+
+    <form action="tratarDatos.html" method="get">
+
+        <fieldset class="completa">
+
+            <legend>Formulario de pedido</legend>
+            <p><strong>Identificación</strong></p>
+
+            <fieldset>
+                <legend>Datos del cliente</legend>
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" size="20" maxlength="40">
+                <br>
+                <label for="pass">Contraseña</label>
+                <input type="password" name="pass" id="pass" size="10"
+                maxlength="20">
+                <br>
+                <em>Longitud minima de 6 caracteres</em>
+                <br>
+                <label for="direccion">Direccion de envio</label>
+                <input type="text" name="direccion" id="direccion" size="40" maxlength="50">
+            </fieldset>
+
+            <fieldset>
+                <legend>Tipo de Cliente</legend>
+                <input type="checkbox" name="particular" id="particular">
+                <label for="particular">Particular</label>
+                <br>
+                <input type="checkbox" name="empresa" id="empresa">
+                <label for="empresa">Empresa</label>
+            </fieldset>
+
+            <p><strong>Datos del pedido</strong></p>
+
+            <fieldset>
+                <legend>Datos del producto</legend>
+
+                <p>Producto</p>
+                <input type="search" name="" id="">
+            </fieldset>
+            <input type="submit" value="Aceptar">
+            <input type="reset" value="Borrar">
+        </fieldset>
+    </form>
+
+</body>
+</html>
