@@ -6,41 +6,84 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Formulario 1</title>
     <style>
+    *{
+        margin: 1px;
+    }
+
+    body{
+        background-color:bisque;
+    }
+
+    h1{
+        color: brown;
+        margin-bottom:20px;
+    }
+
+    input[type=text]{
+        width: 85%;
+        padding: 6px;
+        margin: 7px 0;
+        border: solid 1px brown;
+    }
+
+    .texto{
+        color: brown;
+    }
+
+    p{
+        font-size: large;
+        color: brown;
+    }
+
     form{
-        border: solid 1px black;
-        margin:auto;
+        border: solid 1px brown;
         width: 270px;
-        padding 10px;
+        padding: 10px;
+    }
+
+    input[type=submit],
+    input[type=reset]{
+        width: 25%;
+        height: 30px;
+        background-color: brown;
+        color: #fff;
     }
     </style>
 </head>
 <body>
+    <h1>Datos de cliente</h1>
     <form action="./tratarDatos.html" method="GET">
+        <div class = "texto">
             <label for="nombre">Nombre:</label>
             <input type="text" id="name" />
             <br>
+        
             <label for="NIF">NIF:</label>
             <input type="text" id="NIF" name="NIFcaja" size="6" maxlength="9" />
-            <br>
-            <p>Tipo de Habitacion</p>
-            <label for="ind">Individual</label>
-            <input type="checkbox" name="Individualcheck" id="ind">
-            <br>
-            <label for="dob">Doble</label>
-            <input type="checkbox" name="Doblecheck" id="dob">
-            <br/>
-            <p>Opciones:</p>
-            <label for="desayuno">Desayuno en la habitacion</label>
-            <input type="checkbox" name="desayunocheck" id="desayuno">
-            <br>
-            <label for="jacuzzi">Jacuzzi</label>
-            <input type="checkbox" name="jacuzzicheck" id="jacuzzi">
-            <br>
-            <label for="wifi">Wi-Fi</label>
-            <input type="checkbox" name="wificheck" id="wifi">
-            <br/>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Borrar">
+            <br><br>
+        </div>
+        
+        <p>Tipo de Habitación:</p>
+        <label for="ind">Individual</label>
+        <input type="radio" name="habitacion" id="ind">
+        <br>
+        <label for="dob">Doble</label>
+        <input type="radio" name="habitacion" id="dob">
+        <br><br>
+
+        <p>Opciones:</p>
+        <label for="desayuno">Desayuno en la habitacion</label>
+        <input type="checkbox" name="desayunocheck" id="desayuno">
+        <br>
+        <label for="jacuzzi">Jacuzzi</label>
+        <input type="checkbox" name="jacuzzicheck" id="jacuzzi">
+        <br>
+        <label for="wifi">Wi-Fi</label>
+        <input type="checkbox" name="wificheck" id="wifi">
+        <br/><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+        <br>
     </form>
 </body>
 </html>
