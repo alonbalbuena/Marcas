@@ -1,54 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Document</title>
-        <style>
-            *{
-                margin: 0;
-                padding: 0;
-            }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Elastico</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h1,h2{
+            margin-bottom: 1em;
+        }
 
-            body{
-                margin:0 auto;
-            }
-            
-            #wrapper{
-                margin:20px;
-                width: 980px;
-            }
+        header{
+            text-align: center;
+        }
+        main{
+            width: 60em;
+        }
+        main *{
+            margin-bottom: 1em;
+        }
+        nav{
+            width: 16em;
+            float: left;
+        }
+        
 
-            section *,nav h2{
-                margin-bottom:10px; 
-            }
+        /*elementos uno tras de otro separado por punto y coma */
+        nav ul{
+            padding: 0 1em;
+        }
+        nav li{
+            display: inline;
+        }
+        nav li:after{
+            content: "; ";
+        }
+        /*----*/
 
-            header{
-                text-align: center;
-                margin-bottom: 30px;
-            }
+        section{
+            width: 44em;
+            margin-left:auto;
+        }
+        section ul li{
+            list-style-type: none;
+            width: 12em;
+            float: left;
+            margin-right: 1em;
+        }
 
-            nav{
-                float:left;
-                width:260px;
-            }
-            main{
-                margin-left: 260px;
-            }
 
-            section{
-                width: 700px;
-            }
-            section li{
-                float: left;
-                width: 33%;
-                list-style-type: none;
-            }
-        </style>
-    </head>
-
-    <body>
+    </style>
+</head>
+<body>
         <div id="wrapper">
             <header> 
                 <h1>HTML &amp; CSS: Curso práctico avanzado</h1>
