@@ -5,11 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>formulario 3</title>
+    <style>
+    body{
+
+    }
+
+    h1{
+        border-bottom: dashed 3px blue;
+        text-align: right;
+        letter-spacing: 10px;
+    }
+    </style>
 </head>
 <body>
     <h1>Encuesta televisiva</h1>
 
-    <form action="tratarDatos.html">
+    <form  action="tratarDatos.html">
         <fieldset>
             <legend>Datos Personales</legend>
             <table>
@@ -33,24 +44,24 @@
                 <tr>
                     <td>
                         Sexo:
-                        <input type="radio" name="sexo" id="hombre">
+                        <input type="radio" name="sexo" value="H">
                         <label for="hombre">Hombre</label>
                 
-                        <input type="radio" name="sexo" id="mujer">
+                        <input type="radio" name="sexo" value="M">
                         <label for="mujer">Mujer</label>
                     </td>
 
                     <td colspan="2">
                         Televisores en la casa:
-                        <input type="radio" name="televisores" id="0">
+                        <input type="radio" name="televisores" value="0">
                         <label for="0">0</label>
-                        <input type="radio" name="televisores" id="1">
+                        <input type="radio" name="televisores" value="1">
                         <label for="1">1</label>
-                        <input type="radio" name="televisores" id="2">
+                        <input type="radio" name="televisores" value="2">
                         <label for="2">2</label>
-                        <input type="radio" name="televisores" id="3">
+                        <input type="radio" name="televisores" value="3">
                         <label for="3">3</label>
-                        <input type="radio" name="televisores" id="4">
+                        <input type="radio" name="televisores" value="4">
                         <label for="4">4 o más</label>
                     </td>
                 </tr>

@@ -8,16 +8,46 @@
     <title>Formulario 1</title>
     <style>
     *{
-        margin: 0;
+        margin: 1px;
     }
 
     body{
-        background-color: #FFE4C4;
+        background-color:bisque;
+    }
+
+    h1{
+        color: brown;
+        margin-bottom:20px;
+    }
+
+    input[type=text]{
+        width: 85%;
+        padding: 6px;
+        margin: 7px 0;
+        border: solid 1px brown;
+    }
+
+    .texto{
+        color: brown;
+    }
+
+    p{
+        font-size: large;
+        color: brown;
     }
 
     form{
-        border: solid 1px #A52A2A;
+        border: solid 1px brown;
         width: 270px;
+        padding: 10px;
+    }
+
+    input[type=submit],
+    input[type=reset]{
+        width: 25%;
+        height: 30px;
+        background-color: brown;
+        color: #fff;
     }
 
     .botones input{
@@ -36,23 +66,25 @@
 
 <body>
     <h1>Datos de cliente</h1>
-
     <form action="./tratarDatos.html" method="GET">
-        <div class="datos">
-            <label  for="nombre">Nombre:</label>
-            <input  type="text" id="name" />
+        <div class = "texto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="name" />
             <br>
-            <label  for="NIF">NIF:</label>
+        
+            <label for="NIF">NIF:</label>
             <input type="text" id="NIF" name="NIFcaja" size="6" maxlength="9" />
+            <br><br>
         </div>
-        <br>
-        <p>Tipo de Habitacion</p>
+        
+        <p>Tipo de Habitación:</p>
         <label for="ind">Individual</label>
-        <input type="checkbox" name="Individualcheck" id="ind">
+        <input type="radio" name="habitacion" id="ind">
         <br>
         <label for="dob">Doble</label>
-        <input type="checkbox" name="Doblecheck" id="dob">
-        <br />
+        <input type="radio" name="habitacion" id="dob">
+        <br><br>
+
         <p>Opciones:</p>
         <label for="desayuno">Desayuno en la habitacion</label>
         <input type="checkbox" name="desayunocheck" id="desayuno">
@@ -62,11 +94,10 @@
         <br>
         <label for="wifi">Wi-Fi</label>
         <input type="checkbox" name="wificheck" id="wifi">
-        <br />
-        <div class="botones">
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Borrar">
-        </div>
+        <br/><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+        <br>
     </form>
 </body>
 
