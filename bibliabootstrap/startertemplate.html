@@ -12,11 +12,33 @@
     <title>Hello, world!</title>
   </head>
   <body>
+    <!--las filas tienen que ser hijas directas del container y las celdas a su vez deben de ser hijas directas de las filas -->
+    <div class="display-4 text-center text-md-left">Encabezado</div>
+
     <div class="container">
       <div class="row">
+        <div class="col-12 offset-0 col-md-3 offset-md-1 bg-primary order-1">
+          <div class="row">
+            <div class="col-12"><h1>columna 1</h1></div>
+            <div class="col-6 offset-6 col-md-12 offset-md-0 "><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, veritatis natus ratione, dicta sed at perspiciatis laboriosam sint ipsam eaque optio dolore earum accusantium consequuntur vel ullam quos a! Nobis?</p></div>
+          </div>
+        </div>
+
+        <div class="col-12 offset-0 col-md-3 offset-md-1 bg-secondary order-2"><h1>columna 2</h1><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas corporis rerum minus unde id eaque! Ullam autem aliquid iusto quae, reiciendis similique, laboriosam soluta dicta a adipisci modi, rem magni.</p></div>
+
+        <!--se coloca la primera, solo en -md-->
+        <div class="col-12 offset-0 col-md-3 offset-md-1 bg-danger order-3 order-md-first"><h1>columna 3</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit repellat sint reprehenderit, quas molestias veritatis esse sapiente sequi ex atque delectus eius voluptates nulla. Magnam unde optio nesciunt necessitatibus laboriosam.</p></div>
+      </div>
+    </div>
+    <!--la clase col sin numero se adapta en funcion del contenido-->
+
+    <div class="container-fluid">
+      <div class="row">
+        <h1 class="col 12">fluid</h1>
         <div class="col-12">HOLA MUNDO</div>
       </div>
     </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="./js/jquery-3.3.1.min.js"></script>
