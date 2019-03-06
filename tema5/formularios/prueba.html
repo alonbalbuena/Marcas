@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prueba</title>
+    <style>
+    input[type=text]{
+        width: 20%;
+        padding: 10px;
+    }
+
+    input[type=range]{
+        width: 50%;
+        padding: 20px;
+    }
+    </style>
+</head>
+<body>
+    <form action="./tratarDatos.html" method="get">
+
+        <label for="idtexto">puedes clicar encima del label</label>
+        <input type="text" name="texto" id="idtexto" placeholder="una guia de que poner">
+        <br>
+        aqui aunque cliques no te guia
+        <input type="number" name="numero">
+        <br>
+        date
+        <input type="date" name="date" >
+        <br>
+        <input type="checkbox" name="c">
+        <input type="checkbox" name="c">
+        <br>
+        <input type="radio" name="r" >
+        <input type="radio" name="r" >
+        <br>
+        <label for="idtexto">si clicas te hace ir al primer recuadro</label>
+        <br>
+        <input type="range" name="rango" max="10" min="-10" step="1">
+        <br>
+        <textarea name="lol"cols="30" rows="10"></textarea>
+        <input type="submit" value="validar">
+        
+    </form>
+</body>
+</html>
