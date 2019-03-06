@@ -9,3 +9,8 @@
 .row>*{
     border:1px solid green;
 }
+
+i{
+    height: 3rem;
+    width: 3rem;
+}
