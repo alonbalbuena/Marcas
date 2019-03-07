@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ejercicio2</title>
+</head>
+<body>
+    <form action="./datos.php" method="get">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <!--nombre-->
+            <label for="idnombre">Nombre:</label>
+            <br>
+            <input type="text" name="nombre" id="idnombre" size="80" maxlength="60">
+            <br>
+            <!--edad-->
+            <label for="idedad">Edad:</label>
+            <br>
+            <input type="number" name="edad" id="idedad" min="16" max="80">
+            <br>
+            <!--sexo-->
+            <label for="idsexo">Sexo:</label>
+            <br>
+            <select name="sexo" id="idsexo" size="2">
+                <option value="M">Masculino</option>
+                <!--marcamos Femenino por defecto-->
+                <option value="F" selected>Femenino</option>
+                <option value="">Declino contestar</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Mejor cantante español actual</legend>
+            <input type="radio" name="cantante" id="1" value="Malu" checked>
+            <label for="1">Malú</label>
+            <br>
+            <input type="radio" name="cantante" id="2" value="pabloalboran">
+            <label for="2">Pablo Alborán</label>
+            <br>
+            <input type="radio" name="cantante" id="3" value="melendi">
+            <label for="3">Melendi</label>
+            <br>        
+            <input type="radio" name="cantante" id="4" value="alejandrosanz">
+            <label for="4">Alejandro sanz</label>
+            <br>
+            <input type="radio" name="cantante" id="5" value="otro">
+            <label for="5">"Ninguno de los anteriores"</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Tu opinión</legend>
+            <textarea name="opinion" cols="50" rows="6" placeholder="¿Tu cantante favorito/a no estaba en la lista? - Escribe aquí su nombre"></textarea>
+            <br>
+            <input type="reset" value="Borrar formulario">
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+</html>
