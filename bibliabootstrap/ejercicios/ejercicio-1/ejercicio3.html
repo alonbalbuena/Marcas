@@ -6,30 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles1.css">
-    <title>Grid Sencillo</title>
+    <title>Ejercicio 3</title>
+    <style>
+    .fm-nav a {       
+        color: #fff;       
+        padding: 15px;     
+    } 
+ 
+    .fm-nav .disabled {
+        color: rgba(255, 255, 255, .5);     
+    } 
+
+    .fm-nav a:hover {       
+        background: rgba(255, 255, 255, .1);     
+    } 
+
+    </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <p class="text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem adipisci natus totam quis modi minus</p>
-                <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem adipisci natus totam quis modi minus</p>
-                <p class="text-warning">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem adipisci natus totam quis modi minus</p>
-                <p class="text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem adipisci natus totam quis modi minus</p>
-                <p class="text-danger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem adipisci natus totam quis modi minus</p>
-                <p class="text-danger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem adipisci natus totam quis modi minus</p>
-            </div>
-            <div class="col-lg-6">
-                <p class="bg-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem adipisci natus totam quis modi minus</p>
-                <p class="bg-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem adipisci natus totam quis modi minus</p>
-                <p class="bg-warning">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem adipisci natus totam quis modi minus</p>
-                <p class="bg-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem adipisci natus totam quis modi minus</p>
-                <p class="bg-danger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem adipisci natus totam quis modi minus</p>
-                <p class="text-danger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem adipisci natus totam quis modi minus</p>
-            </div>
+    
+    <h1>Menu con ul</h1>
+    <nav class="bg-dark">
+        <div class="container">
+            <!--la etiqueta container dentro de navbar permite tener el logo(navbar-brand) a un lado y los links a otro-->
+            <a class="navbar-brand" href="#">Logotipo</a>
+
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Proximamente</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+            </ul>
         </div>
-    </div>
+    </nav>
+
+    <h1>Menu con estilos CSS</h1>
+    <nav class="fm-nav bg-primary py-3">
+        <a href="#">Inicio</a>
+        <a href="#">Blog</a>
+        <a class="disabled" href="#">Proximamente</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <h1>Menu con Nav</h1>
+    <nav class="nav">
+        <a class="px-3" href="#">Inicio</a>
+        <a class="px-3" href="#">Blog</a>
+        <a class="px-3" href="#">Proximamente</a>
+        <a class="px-3" href="#">Contacto</a>
+    </nav>
+
+    <h1>Alineando el menu</h1>
+    <nav class="nav justify-content-center">
+        <a class="px-3" href="#">Inicio</a>
+        <a class="px-3" href="#">Blog</a>
+        <a class="px-3" href="#">Proximamente</a>
+        <a class="px-3" href="#">Contacto</a>
+    </nav>
+
+    <h1>Menu vertical</h1>
+    <nav class="nav">
+        <a href="#">Inicio</a>
+    </nav>
 
     <script src="js/jquery.slim.js"></script>
     <script src="js/popper.js"></script>
