@@ -44,6 +44,63 @@
         </form>
     </nav>
 
+    <header><!--imagenes de cabecera-->
+        <!--w-100 nos permite que las imagenes ocupen todo el ancho de la pagina, y con h-25 regulamos la altura-->
+        <div id="carrusel" class="carousel slide h-10" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active"><!--active, porque sera la que se muestre por defecto-->
+                <img src="./imagenes/bg.jpg" class="w-100">
+              </div>
+            </div>
+
+            <!--boton pagina previa-->
+            <a class="carousel-control-prev" href="#carrusel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            
+            <!--botno pagina siguiente-->
+            <a class="carousel-control-next" href="#carrusel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </header>
+
+    <main class="container"><!--contenido principal-->
+        <h1 class="display-8 text-center">Galería</h1>
+        <hr/>
+        <div class="row">
+            <div class="card w-25 r-25 border-primary">
+                <img class="card-img-top rounded-circle" src="./imagenes/1.jpg">
+                <h5 class="card-header">Smartphones</h5>
+                <div class="card-body">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vero, tenetur praesentium </p>
+                    <a class="btn" href="#">Comprar</a>
+                    <a class="btn " href="#">Detalles</a>
+                </div>
+            </div>
+            <div class="card w-25">
+                <img class="card-img-top rounded-circle" src="./imagenes/2.jpg">
+                <h5 class="card-header">Mac</h5>
+                <div class="card-body">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vero, tenetur praesentium </p>
+                    <a class="btn" href="#">Comprar</a>
+                    <a class="btn " href="#">Detalles</a>
+                </div>
+            </div>
+            <div class="card w-25">
+                <img class="card-img-top rounded-circle" src="./imagenes/3.jpg">
+                <h5 class="card-header">Canon</h5>
+                <div class="card-body">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vero, tenetur praesentium </p>
+                    <a class="btn" href="#">Comprar</a>
+                    <a class="btn " href="#">Detalles</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
